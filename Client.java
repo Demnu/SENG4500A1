@@ -15,11 +15,11 @@ public class Client {
             while (true) {
                 String userInput = keyboard.nextLine();
                 out.println(userInput);
-
+                out.flush();
                 if ("END".equals(userInput)) {
                     System.exit(0);                    
                 }
-                
+
                 String serverResponse = in.nextLine();
                 System.out.println("Server says: " + serverResponse);
             }
